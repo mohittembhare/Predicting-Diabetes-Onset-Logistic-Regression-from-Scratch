@@ -1,15 +1,15 @@
 # Predicting Diabetes Onset: Logistic Regression from Scratch
 
-## 📌 Project Overview
+##  Project Overview
 This repository contains a statistical analysis of the Pima Indians Diabetes dataset, predicting the probability of diabetes onset using Logistic Regression. 
 
-## 🗄️ The Dataset
+##  The Dataset
 * **Source:** National Institute of Diabetes and Digestive and Kidney Diseases (via the UCI Machine Learning Repository).
 * **Observations:** 768 adult females of Pima Indian heritage.
 * **Dependent Variable:** `Outcome` (Binary: 1 = Tested positive for diabetes, 0 = Tested negative).
 * **Independent Variables (Predictors):** Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age.
 
-## 🔬 Mathematical Methodology
+##  Mathematical Methodology
 
 ### 1. Data Cleaning (Pandas)
 Biologically impossible `0` values (e.g., a Blood Pressure or BMI of 0) were treated as missing data. These were converted to `NaN` and imputed using the median of their respective columns to maintain distribution shape without introducing external library dependencies.
@@ -32,7 +32,7 @@ $$\beta := \beta - \alpha \frac{1}{n} X^T (\hat{y} - y)$$
 
 *(Where $\alpha$ is the step size, $n$ is the number of observations, and $\hat{y}$ is the predicted probability).*
 
-## 📊 Key Findings & Interpretations
+##  Key Findings & Interpretations
 
 *The manual gradient descent algorithm converged successfully, yielding the following coefficients and odds ratios. Note: Because the independent variables were standardized prior to modeling, interpretations are based on a **one standard deviation increase**.*
 
