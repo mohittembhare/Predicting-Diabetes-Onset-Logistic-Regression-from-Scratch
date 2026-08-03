@@ -11,13 +11,13 @@ This repository contains a statistical analysis of the Pima Indians Diabetes dat
 
 ##  Mathematical Methodology
 
-### 1. Data Cleaning (Pandas)
+### 1. Data Cleaning
 Biologically impossible `0` values (e.g., a Blood Pressure or BMI of 0) were treated as missing data. These were converted to `NaN` and imputed using the median of their respective columns to maintain distribution shape without introducing external library dependencies.
 
 ### 2. Matrix Preparation
 To ensure the gradient descent algorithm converges properly, the independent variables matrix ($X$) was standardized (mean = 0, standard deviation = 1). An intercept column of ones was manually appended to the matrix to calculate $\beta_0$.
 
-### 3. Logistic Regression Algorithm (NumPy)
+### 3. Logistic Regression Algorithm
 The model estimates the probability of a positive diagnosis using the logistic (sigmoid) function:
 
 $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
